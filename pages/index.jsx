@@ -79,7 +79,7 @@ export default function Home() {
                 blockExplorerUrls: ['https://explorer.harmony.one/'],
               },
             ];
-  
+
             window.ethereum
               .request({ method: 'wallet_addEthereumChain', params })
               .then(() =>
@@ -99,6 +99,7 @@ export default function Home() {
                 })
               );
           }
+        }
       }
     } else {
       showNotification({
